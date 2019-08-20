@@ -81,6 +81,7 @@ arn:aws:iam::1111111111111:role/some/path/ZookeepersAdminRole
 
 So as a Cerberus consumer, when you update your clients since we are removing KMS auth from all clients, you will need to update permissions in your SDBs if you are currently utilizing IAM paths.
 
+<a name="local"></a>
 # A better pattern for local development
 
 A good benefit of using STS auth with a tool such as [gimme-aws-creds](https://github.com/Nike-Inc/gimme-aws-creds) is that you can enable a better local development experience for users.
