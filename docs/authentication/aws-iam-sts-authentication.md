@@ -84,7 +84,7 @@ So as a Cerberus consumer, when you update your clients since we are removing KM
 <a name="local"></a>
 # A better pattern for local development
 
-A good benefit of using STS auth with a tool such as [gimme-aws-creds](https://github.com/Nike-Inc/gimme-aws-creds) is that you can enable a better local development experience for users.
+A good benefit of using STS auth with a tool such as [gimme-aws-creds](https://github.com/Nike-Inc/gimme-aws-creds) is that you can enable a better local development experience.
 
 In the past we would recommend using a script or the dashboard to fetch an auth token and set it to an env var `CERBERUS_TOKEN=xxxxx` and our clients would pick that up and use it.
 
@@ -107,7 +107,7 @@ AP77JGH6A84FA3:~ jfiel2$ aws sts get-caller-identity
 }
 ```
 
-With the above example I can either add the specific user ARN STS ARN:
+With the above example I can either add the STS ARN for the specific user:
 
 `arn:aws:sts::1111111111111:assumed-role/ZookeepersAdminRole/justin.field@example.com`
 
